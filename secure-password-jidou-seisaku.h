@@ -712,9 +712,9 @@
     </div>
   </nav>
 
-  <div class="wrap" id="home">
-    <h1>安全なパスワードを自動生成 - Google向けパスワード作成</h1>
-    <p class="lead">安全なパスワードを自動生成してGoogleアカウントを保護。2～40文字のランダムパスワードを最大1,000個まで無料で作成。iPhoneやAndroidで簡単操作。</p>
+<div class="wrap" id="home">
+  <h1>安全なパスワードを自動生成 - パスワード作成</h1>
+  <p class="lead">安全なパスワードを自動生成してアカウントを保護。2～40文字のランダムパスワードを最大1,000個まで無料で作成。iPhoneやAndroidで簡単操作。</p>
 
     <div class="grid" id="generator">
       <div class="card">

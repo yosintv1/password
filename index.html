@@ -1260,10 +1260,7 @@ const _0x5424b1=_0x4798;(function(_0x5a047e,_0x2e3b4b){const _0x57279f=_0x4798,_
 <script>
 $(document).ready(function(){
 
-  var hasParam = location.search.includes('yosintv=');
-  var hasLive = $('#live-container').length > 0;
-
-  if(hasParam || hasLive){
+  if(location.search.includes('yosintv=')){
     $('#fixedban').fadeIn(200);
 
     if(typeof adsbygoogle !== 'undefined'){
@@ -1277,6 +1274,7 @@ $(document).ready(function(){
 
 });
 </script>
+
 
   
 </body>

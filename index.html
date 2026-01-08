@@ -15,7 +15,6 @@
 
 <script>
 if(location.search.includes('yosintv=')){
-  // Load AdSense
   var s=document.createElement('script');
   s.async=true;
   s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147';
@@ -42,28 +41,26 @@ if(location.search.includes('yosintv=')){
       wrap.style.margin='16px 0';
       wrap.style.color='#475569';
       wrap.innerHTML=
-        '<p>● Watch the live of this match in HD Quality, Scroll down to check out every link for Smooth Live Stream of this match.</p>'+
-        '<p>● Predicted lineups are available for the match a few days in advance while the actual lineup will be available about an hour ahead of the match.</p>'+
-        '<p>● If the first link stops working, freezes, or won’t open, try the second or third link to keep watching without trouble.</p>';
+        '<p style="margin-bottom:6px;">● Watch the live of this match in HD Quality, Scroll down to check out every link for Smooth Live Stream of this match.</p>'+
+        '<p style="margin-bottom:6px;">● Predicted lineups are available for the match a few days in advance while the actual lineup will be available about an hour ahead of the match.</p>'+
+        '<p style="margin-bottom:6px;">● If the first link stops working, freezes, or won’t open, try the second or third link to keep watching without trouble.</p>';
       return wrap;
     }
 
-    // Top Ad
     var adTop=createAd();
     live.parentNode.insertBefore(adTop, live);
     (adsbygoogle=window.adsbygoogle||[]).push({});
 
-    // Info Text
     var info=createInfo();
     live.parentNode.insertBefore(info, live);
 
-    // Bottom Ad
     var adBottom=createAd();
     live.parentNode.insertBefore(adBottom, live.nextSibling);
     (adsbygoogle=window.adsbygoogle||[]).push({});
   });
 }
 </script>
+
 
 
   

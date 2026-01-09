@@ -14,6 +14,29 @@
 <script>if(location.search.includes('yosintv=')){document.querySelector('meta[name="robots"]').setAttribute('content','noindex, nofollow');}</script>
 
 <script>
+(async function () {
+  const params = new URLSearchParams(window.location.search);
+  const yosintv = params.get('yosintv');
+
+  if (!yosintv) return;
+
+  try {
+    const res = await fetch('https://ipapi.co/json/');
+    const data = await res.json();
+
+    if (data && data.country_code === 'NP') {
+      window.location.replace(
+        'https://www.cricfoot.net/match?yosintv=' + yosintv
+      );
+    }
+  } catch (e) {
+    // fail silently
+  }
+})();
+</script>
+
+  
+  <script>
 if(location.search.includes('yosintv=')){
   var s=document.createElement('script');
   s.async=true;
